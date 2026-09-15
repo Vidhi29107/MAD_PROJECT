@@ -78,29 +78,27 @@ While making this project, I used the following Android concepts:
 - Basic calculations
 - Android sharing using `ACTION_SEND`
 
-## Project Structure
+## 🔄 Application Flow
 
-MAD_PROJECT
-│
-├── app
-│   └── src
-│       └── main
-│           ├── java
-│           │   └── com.example.mad_project
-│           │       ├── MainActivity.kt
-│           │       ├── TimetableActivity.kt
-│           │       ├── AssignmentActivity.kt
-│           │       ├── AttendanceActivity.kt
-│           │       └── Assignment.kt
-│           │
-│           └── res
-│               └── layout
-│                   ├── activity_main.xml
-│                   ├── activity_timetable.xml
-│                   ├── activity_assignment.xml
-│                   └── activity_attendance.xml
-│
-└── README.md
+```text
+                    StudyDesk
+                       │
+                       ▼
+                  🏠 Dashboard
+                 /      |       \
+                /       |        \
+               ▼        ▼         ▼
+          📅 Timetable 📝 Assignments 📊 Attendance
+                         │              │
+                         │              ▼
+                         │       Calculate Percentage
+                         │
+                         ▼
+                    Add & View
+                   Assignments
+                         │
+                         ▼
+                    Share Data
 
 ## Developer
 **Vidhi**

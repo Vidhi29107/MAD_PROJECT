@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Page title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timetable"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Monday -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Monday"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="09:00 AM - 10:00 AM   Python&#10;10:00 AM - 11:00 AM   DBMS&#10;11:00 AM - 12:00 PM   Operating System"
+            android:textSize="16sp" />
+
+        <!-- Tuesday -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Tuesday"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="09:00 AM - 10:00 AM   DAA&#10;10:00 AM - 11:00 AM   Software Engineering&#10;11:00 AM - 12:00 PM   Computer Networks"
+            android:textSize="16sp" />
+
+        <!-- Wednesday -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Wednesday"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="09:00 AM - 10:00 AM   Python&#10;10:00 AM - 11:00 AM   DAA&#10;11:00 AM - 12:00 PM   DBMS"
+            android:textSize="16sp" />
+
+        <!-- Thursday -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Thursday"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="09:00 AM - 10:00 AM   Computer Networks&#10;10:00 AM - 11:00 AM   Operating System&#10;11:00 AM - 12:00 PM   Python"
+            android:textSize="16sp" />
+
+        <!-- Friday -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Friday"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="09:00 AM - 10:00 AM   DBMS&#10;10:00 AM - 11:00 AM   Software Engineering&#10;11:00 AM - 12:00 PM   DAA"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

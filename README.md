@@ -1,107 +1,112 @@
 # StudyDesk
 
-StudyDesk is a simple Android app made for students to keep some basic academic activities in one place.
+## 📱 Project Overview
 
-I made this project as part of my Mobile Application Development assignment. The main idea was to create a small application using basic Android concepts such as activities, layouts, intents, buttons, user input and data sharing.
+**StudyDesk** is a simple Android application developed to provide useful student utilities in one place. The application helps students view their timetable, manage assignment information, and calculate attendance percentage.
 
-## Features
+The project is developed as part of the **Mobile Application Development (MAD)** practical assignment using Android Studio, Kotlin, and XML.
+
+---
+
+## 🎯 Objective
+
+The main objective of StudyDesk is to develop a small-scale Android application that demonstrates practical understanding of:
+
+- Android application development
+- Activity and screen navigation
+- XML-based user interface design
+- Kotlin programming and event handling
+- Explicit and Implicit Intents
+- Local data storage using SharedPreferences
+- Input validation
+- Android application testing and APK generation
+- Git and GitHub for version control
+
+---
+
+## ✨ Features
 
 ### 1. Dashboard
-The dashboard is the main screen of the app. It gives access to all the main features.
-
-- Timetable
-- Assignment Manager
-- Attendance Calculator
+The application starts with a simple dashboard that provides access to the main features of StudyDesk.
 
 ### 2. Timetable
-This section shows the weekly class timetable from Monday to Friday.
-
-The timetable contains subjects such as:
-
-- Python
-- DBMS
-- Operating System
-- DAA
-- Software Engineering
-- Computer Networks
+- Displays the weekly timetable from Monday to Friday.
+- Provides a simple and organized view of the student's schedule.
 
 ### 3. Assignment Manager
-The Assignment Manager is used to add and view assignments.
-
-The user can enter:
-
-- Assignment title
-- Subject
-- Due date
-
-After adding an assignment, it is displayed on the screen. Multiple assignments can be added.
-
-There is also a **Share Assignments** option which uses Android's sharing feature to share the assignment details.
+- Add assignment details such as:
+  - Assignment title
+  - Subject
+  - Due date
+- Display added assignments.
+- Store assignment information locally using SharedPreferences.
+- View previously saved assignments after reopening the application.
+- Share assignment information using Android's sharing functionality.
 
 ### 4. Attendance Calculator
-This section calculates attendance percentage using:
+- Accepts the number of classes attended.
+- Accepts the total number of classes.
+- Calculates attendance percentage.
+- Validates the entered values.
+- Checks the 75% attendance threshold and displays an appropriate message.
 
-**Attendance = (Attended Classes / Total Classes) × 100**
+---
 
-It also checks for invalid input such as:
+## 🛠️ Technologies Used
 
-- Empty fields
-- Total classes equal to 0
-- Attended classes greater than total classes
-- Negative values
+- **Android Studio** – Development environment
+- **Kotlin** – Application logic
+- **XML** – User interface design
+- **Android SDK** – Android application development
+- **SharedPreferences** – Local assignment storage
+- **JSONArray** – Handling multiple saved assignments
+- **Git** – Version control
+- **GitHub** – Source code repository
 
-## Technologies Used
+---
 
-- Kotlin
-- XML
-- Android Studio
-- Android SDK
-- Git
-- GitHub
+## 📚 Android Concepts Used
 
-## Android Concepts Used
-
-While making this project, I used the following Android concepts:
+The project demonstrates the following Android concepts:
 
 - Activities
-- Intents
-- XML layouts
-- LinearLayout
-- ScrollView
-- CardView
+- `onCreate()`
+- XML Layouts
 - TextView
 - EditText
 - Button
-- Toast
-- Click listeners
+- CardView
+- LinearLayout
+- ScrollView
+- `findViewById()`
+- `setContentView()`
+- `setOnClickListener()`
+- Explicit Intent
+- Implicit Intent
+- Toast messages
+- SharedPreferences
 - Input validation
-- Basic calculations
-- Android sharing using `ACTION_SEND`
+
+---
 
 ## 🔄 Application Flow
 
 ```text
-                    StudyDesk
-                       │
-                       ▼
-                  🏠 Dashboard
-                 /      |       \
-                /       |        \
-               ▼        ▼         ▼
-          📅 Timetable 📝 Assignments 📊 Attendance
-                         │              │
-                         │              ▼
-                         │       Calculate Percentage
-                         │
-                         ▼
-                    Add & View
-                   Assignments
-                         │
-                         ▼
-                    Share Data
-
-## Developer
-**Vidhi**
-B.Tech Computer Engineering
-Ganpat University
-U.V. Patel College of Engineering
+                         StudyDesk
+                            |
+                       MainActivity
+                         Dashboard
+                            |
+          +-----------------+-----------------+
+          |                 |                 |
+          v                 v                 v
+     Timetable         Assignments       Attendance
+          |                 |                 |
+          v                 v                 v
+     View Schedule      Add / View        Enter Classes
+                            |                 |
+                            v                 v
+                     Save Locally        Calculate %
+                            |                 |
+                            v                 v
+                         Share          Check 75%
